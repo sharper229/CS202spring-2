@@ -5,25 +5,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah Harpers Website</title>
+  <body>
+    <nav>
+      <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+      <button onclick="toggleMenu()">Menu <span>➤</span></button>
+      <div class="dropdown" id="menu">
+        <!-- your home would be index.html, mine isn't because it is an example -->
+        <a href="dropdown-menu.html">Home</a>
+        <a href="pages/contactus.html">Order</a>
+        <a href="pages/gophers.html">About Us</a>
+        <a href="pages/wombats.html">Location</a>
+        <a href="pages/squirrels.html">Contact</a>
+      </div>
+    </nav>
+    <!-- 
+      Scripts are often in the <head> </head> or just before the closing body tag.
+      Putting at the bottom helps ensure that the script runs after the DOM (think "page") is loaded. 
+    -->
+  
+    <script>
+      function toggleMenu() {
+        // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+        // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+        document.getElementById("menu").classList.toggle("show");
+        document.getElementsByTagName("span")[0].classList.toggle("rotate");
+      }
+    </script>
+  </body>
+  
+  </html>
   <style>
     body {
       margin: 2rem;
-      font-size: 3rem;
+      font-size: 1rem;
       background-color: #efece8;
       font-style: normal;
       color: #ffffff;
     }
-
     h1 {
       font-family: "Style Script", cursive;
       font-weight: 400;
       font-style: normal;
+      font-size: 6rem;
     }
-    h2{
-    font-family: "Style Script", cursive;
-    font-weight: 200;
-    font-style: small;
-    }
+
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +62,10 @@
 <h1>Sweets Corner Bakery</h1>
 <img src="../assets/images/Screenshot 2025-03-27 902011.png/" alt="">
 
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<h1>Sweets Corner Bakery</h1>
+<img src="" alt="">
 </html>
 </head>
