@@ -5,12 +5,15 @@ button {
 .dropdown {
   display: none;
 }
-menu{
-  display: onclick;
-}
-.show {
+/* This is my menu settings */
+.show, .show a {
   display: block;
-
+  background-color: #efece8;
+  width: 100px;
+  color: #000;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 body {
   margin: 2rem;
@@ -18,7 +21,7 @@ body {
   background-color: #efece8;
   font-style: normal;
   color: #ffffff;
-  background: no-repeat url(assets/backgroundimg.jpg);
+  background: no-repeat url(../assets/backgroundimg.jpg);
 }
 p{
   width: 500px;
@@ -35,6 +38,9 @@ p{
     text-align: center;
     border: 5px solid #000;
   }
+  h2{
+  
+  }
 
   footer {
     display:flex;
@@ -42,10 +48,10 @@ p{
     font-family: "Inria Serif", serif;
     font-weight: 400;
     font-style: normal;
-    color: #efece8;
+    color: #000000;
     /* margin: 14rem; */
     text-align: center;
-    margin: 20rem;
+    background-color: #efece8;
   }
   footer img {
     margin: 0.3rem;
