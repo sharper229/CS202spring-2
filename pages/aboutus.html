@@ -14,17 +14,34 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Style+Script&display=swap"
     rel="stylesheet">
 </head>
-<body>
-      <nav>
-        <button onclick="toggleMenu()"><span>&#9776;</span></button>
-        <div class="dropdown" id="menu">
-          <a href="index.html">Home</a>
-          <a href="pages/order.html">Order</a>
-          <a href="pages/aboutus.html">About Us</a>
-          <a href="pages/location.html">Location</a>
-          <a href="pages/contact.html">Contact</a>
-        </div>
-      </nav>
-      <h1>About Us</h1>
+<body><body>
+ 
+  <img src="../assets/logo.png" alt="logo">
+  <nav>
+    <button onclick="toggleMenu()"><span>&#9776;</span></button>
+    <div class="dropdown" id="menu">
+      <a href="../index.html">Home</a>
+      <a href="order.html">Order</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="location.html">Location</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <h1>About Us</h1>
+  <!-- add other content  -->
+  <footer> 
+    <span>© 2025 Sweets Corner</span>
+    <img src="../assets/instalogo.png" alt="insta logo">
+    <img src="../assets/tiktok.png" alt=" tiktok logo">
+    <img src="../assets/facebook.png" alt="facebook logo">
+  </footer>
+  <script>
+    function toggleMenu() {
+      // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+      // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+      document.getElementById("menu").classList.toggle("show");
+      document.getElementsByTagName("span")[0].classList.toggle("rotate");
+    }
+  </script>
 </body>
 </html>
