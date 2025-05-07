@@ -8,11 +8,13 @@ button {
 .show, .show a {
   display: block;
   background-color: #efece8;
-  width: 100px;
+  width: 70px;
   color: #000;
   font-family: "Inria Serif", serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration:none;
+  line-height: 1.5rem;
 }
 body {
   margin: 2rem;
