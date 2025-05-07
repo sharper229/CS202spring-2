@@ -30,6 +30,7 @@ line-height: 2;
 font-family: "Inria Serif", serif;
 font-weight: 400;
 font-style: bold;
+margin-bottom: 3rem;
 }
 .infobox{
 text-align: left;
@@ -40,7 +41,7 @@ width: 310px;
 background-color: #ffffff;
 margin: auto;
 line-height: 3rem;
-padding: 2px;
+padding: 10px;
 font-family: "Inria Serif", serif;
 font-weight: 400;
 font-style: normal;
@@ -108,16 +109,21 @@ line-height: 2;
 font-family: "Inria Serif", serif;
 font-weight: 400;
 font-style: normal;
+margin-top: 2rem;
 }
-img{
+/* body img{
 margin: auto;
-width: 100px;
-height: 100px;
-}
+width: 10rem;
+} */
 /* span img{
 margin: 0.3rem;
 width: 600px;
 height: 600px;
+} */
+ /* img{
+margin: auto;
+width: 60rem;
+height: 60rem;
 } */
 .locationbox2{
 text-align: center;
